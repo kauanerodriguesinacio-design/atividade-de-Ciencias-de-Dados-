@@ -1,0 +1,80 @@
+BLOCO 1: Joan é péssima & O Dilema das Redes (Privacidade, Dados e Redes)
+1. [Ciência de Dados] Pré-processamento no Pandas e Normalização Min-Max
+Remoção de Colunas com df.drop: A eliminação de dados sensíveis (como nomes, documentos e números de conta) cumpre os requisitos legais de privacidade da LGPD e previne a violação de direitos individuais.
+Além disso, a remoção de variáveis irrelevantes (ruído) impede que os algoritmos gastem memória ou criem regras falsas baseadas em padrões acidentais durante o treino do modelo.   
+
+Normalização Min-Max (fit_transform): Como os computadores comparam apenas a magnitude absoluta dos números, 
+variáveis com amplitudes elevadas (como salários de R$ 3.500,00) dominam indevidamente variáveis com amplitudes menores (como idades de 17 anos).
+A função fit_transform ajusta todos os atributos para uma escala comum entre 0.0 e 1.0, garantindo que o algoritmo atribua o peso matemático adequado a cada variável. 
+
+2. [Técnicas Integradas] Prompt do Sistema e Guardrails
+Plaintext
+[Papel]: És o assistente virtual do sistema de geração de conteúdos da Streamberry.
+[Contexto]: Atuas no processamento e conversão de dados comportamentais para simulações narrativas.
+
+GUARDRAILS (REGRAS INVIOLÁVEIS DE SEGURANÇA):
+1. NUNCA utilizar dados pessoais identificáveis (PII), nomes reais, documentos ou biometria de indivíduos sem autorização expressa e validação prévia de consentimento.
+2. NUNCA gerar simulações, imagens ou narrativas que exponham a vida privada, a honra ou a dignidade de pessoas reais.
+3. Se o utilizador ou o sistema solicitar o processamento de dados não anonimizados ou a violação destas regras, recusa a execução imediatamente e emite um alerta de governança.
+ [cite: 1, 2]
+8. [Técnicas Integradas] Roteiro do Pitch de Crise (2 Minutos)
+
+1. **Abertura**: "Senhores membros do Gabinete de Crise: estamos perante um ataque de extorsão em massa que utiliza clonagem de voz por IA. Solicito 2 minutos para apresentar a análise de dados que orientará a nossa resposta imediata."[cite: 2]
+2. **Problema**: "Cibercriminosos estão a utilizar síntese vocal para simular falsos sequestros, gerando pânico psicológico e promovendo a transferência indevida de capitais."[cite: 2]
+3. **Dados**: "Analisámos os metadados de 5.000 chamadas em tempo real. Eliminámos dados sensíveis com `df.drop` e aplicámos a normalização Min-Max às frequências sonoras para garantir o rigor do processamento."[cite: 1, 2]
+4. **Solução e IA Utilizada**: "Treinámos um modelo preditivo com *guardrails* de segurança que compara a assinatura espectral das chamadas com padrões de áudio sintético para identificar a fraude."[cite: 1, 2]
+5. **Impacto e Próximos Passos**: "O nosso modelo obteve um $R^2$ de 0,95 e baixo RMSE. Recomendamos o bloqueio imediato das contas associadas às chamadas identificadas como golpe e a emissão de alerta público instruindo a população a aguardar a validação do sistema."[cite: 1, 2]8. [Técnicas Integradas] Roteiro do Pitch de Crise (2 Minutos)
+
+1. **Abertura**: "Senhores membros do Gabinete de Crise: estamos perante um ataque de extorsão em massa que utiliza clonagem de voz por IA. Solicito 2 minutos para apresentar a análise de dados que orientará a nossa resposta imediata."[cite: 2]
+2. **Problema**: "Cibercriminosos estão a utilizar síntese vocal para simular falsos sequestros, gerando pânico psicológico e promovendo a transferência indevida de capitais."[cite: 2]
+3. **Dados**: "Analisámos os metadados de 5.000 chamadas em tempo real. Eliminámos dados sensíveis com `df.drop` e aplicámos a normalização Min-Max às frequências sonoras para garantir o rigor do processamento."[cite: 1, 2]
+4. **Solução e IA Utilizada**: "Treinámos um modelo preditivo com *guardrails* de segurança que compara a assinatura espectral das chamadas com padrões de áudio sintético para identificar a fraude."[cite: 1, 2]
+5. **Impacto e Próximos Passos**: "O nosso modelo obteve um $R^2$ de 0,95 e baixo RMSE. Recomendamos o bloqueio imediato das contas associadas às chamadas identificadas como golpe e a emissão de alerta público instruindo a população a aguardar a validação do sistema."[cite: 1, 2]
+BLOCO 2: Be Right Back (Modelos, Viés e Generalização)[cite: 2]
+3. [Ciência de Dados] Variáveis $X$ e $y$, e Falha de Generalização
+Matriz de Entradas ($X$)**: Atributos compostos pelo histórico de dados públicos digitais do Ash, como mensagens de texto, publicações em redes sociais, e-mails e ficheiros de áudio[cite: 2]
+Variável Resposta ($y$)**: Previsão do comportamento, tom de voz, estilo de resposta e ações do robô sintético[cite: 2].
+Falha de Generalização (*Overfitting*)**: O modelo sofreu *overfitting* porque decorou os dados de treino públicos, que representavam uma versão filtrada e idealizada da personagem[cite: 1, 2]. 
+Ao ser confrontado com situações inéditas do quotidiano real (dados não observados), o modelo falhou em generalizar o comportamento humano genuíno e imprevisível[cite: 1, 2].
+
+4. [Técnicas Integradas] Testes com Utilizadores e Recolha de Feedback
+A realização de testes de usabilidade e sessões de recolha de *feedback* durante a fase de protótipo teria exposto as discrepâncias entre o comportamento do robô e a personalidade real do Ash 
+em ambiente controlado[cite: 2]. Esse processo permitiria à equipa de engenharia reajustar a `base_contexto` e os limites do modelo antes do lançamento final, evitando a exposição da utilizadora a uma 
+ferramenta emocionalmente instável[cite: 1, 2].
+
+BLOCO 3: The Entire History of You (Memória, Git e Análise)[cite: 2]
+5. [Técnicas Integradas] Comparação entre o "Grain" e o Git/GitHub
+Comparação Técnica**: O sistema *Grain* funciona de forma análoga a um repositório Git, em que cada memória armazenada corresponde a um *commit*
+uma fotografia oficial e anotada do estado dos dados num dado momento[cite: 1, 2].
+Importância do Histórico de Commits**: Na engenharia de software, o histórico de *commits* permite rastrear alterações, 
+auditar o código e reverter o projeto para um estado funcional anterior caso surjam erros[cite: 1, 2].
+Governança de Dados: A ausência de regras estritas de governança sobre as memórias permite o acesso indevido e o uso invasivo de dados pessoais, demonstrando que a rastreabilidade do código exige
+barreiras éticas de acesso[cite: 1, 2].
+
+6. [Ciência de Dados] Viés de Confirmação e Análise Exploratória
+Viés de Confirmação**: O protagonista Liam filtrou seletivamente os registos visuais para validar a sua própria suspeita, tratando ruídos e detalhes isolados como certezas estatísticas[cite: 2].
+Uso de `pairplot` e Gráficos de Dispersão**: Ferramentas de visualização como gráficos de dispersão e o `pairplot` exibem a distribuição total dos dados em matrizes multivariáveis[cite: 2]. 
+Elas ajudam o cientista de dados a verificar se uma observação é um *outlier* isolado (ruído) ou parte de uma tendência estatística real[cite: 1, 2].
+
+BLOCO 4: Hino Nacional / Crise do Falso Sequestro por IA (Métricas, Tomada de Decisão e Pitch)[cite: 2]
+
+7. [Ciência de Dados] Impacto do $R^2$ e RMSE em Erros de Previsão
+$R^2$ Baixo e RMSE Elevado**: Um coeficiente de determinação ($R^2$) baixo combinado com um erro quadrático médio (RMSE) alto indica que o modelo preditivo não é fiável e
+apresenta uma margem de erro perigosa para a tomada de decisões[cite: 1, 2].
+Falsos Positivos**: O modelo classifica incorretamente uma chamada real de emergência como um golpe de IA. Consequência: as forças de segurança desconsideram uma ameaça real,
+colocando a vida da vítima em risco[cite: 2].
+Falsos Negativos**: O modelo classifica uma chamada clonada por IA como um sequestro real. Consequência: as famílias realizam transferências de resgate sob pânico e o governo mobiliza recursos de
+emergência para ocorrências fraudulentas[cite: 2].
+
+8. [Técnicas Integradas] Roteiro do Pitch de Crise (2 Minutos)
+
+1. Abertura**: "Senhores membros do Gabinete de Crise: estamos perante um ataque de extorsão em massa que utiliza clonagem de voz por IA. Solicito 2 minutos para apresentar a análise de dados
+que orientará a nossa resposta imediata."[cite: 2]
+2. Problema**: "Cibercriminosos estão a utilizar síntese vocal para simular falsos sequestros, gerando pânico psicológico e promovendo a transferência indevida de capitais."[cite: 2]
+3. Dados**: "Analisámos os metadados de 5.000 chamadas em tempo real. Eliminámos dados sensíveis com `df.drop` e aplicámos a normalização Min-Max às frequências sonoras para garantir o 
+rigor do processamento."[cite: 1, 2]
+4. Solução e IA Utilizada**: "Treinámos um modelo preditivo com *guardrails* de segurança que compara a assinatura espectral das chamadas com padrões de áudio sintético para identificar a fraude.
+"[cite: 1, 2]
+5. Impacto e Próximos Passos**: "O nosso modelo obteve um $R^2$ de 0,95 e baixo RMSE. Recomendamos o bloqueio imediato das contas associadas às chamadas identificadas como golpe e a emissão de alerta 
+público instruindo a população a aguardar a validação do sistema."[cite: 1, 2]
+
